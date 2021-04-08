@@ -3,8 +3,7 @@ import 'package:http/http.dart' as http;
 
 class HttpService {
   final String apiKey = '19585cba4491f17348bf5b890678c44f';
-  final String baseUrl =
-      'https://api.themoviedb.org/3/movie/popular?api_key=19585cba4491f17348bf5b890678c44f';
+  final String baseUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=';
 
   Future<String> getPopularMovies() async {
     final String uri = baseUrl + apiKey;
