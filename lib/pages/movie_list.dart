@@ -31,6 +31,7 @@ class _MovieListState extends State<MovieList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.grey[350],
         appBar: AppBar(
           title: Text("Popular Movies"),
           backgroundColor: Colors.black,
@@ -42,6 +43,7 @@ class _MovieListState extends State<MovieList> {
               color: Colors.white,
               elevation: 2.0,
               child: ListTile(
+                //challenge: menambahkan gambar dari response api ke listview
                 leading: Image.network('https://image.tmdb.org/t/p/w500/' +
                     movies[position].posterPath),
                 title: Text(movies[position].title),
