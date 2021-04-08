@@ -24,6 +24,7 @@ class _MovieListState extends State<MovieList> {
   @override
   void initState() {
     service = HttpService();
+    initialize();
     super.initState();
   }
 
